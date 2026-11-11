@@ -1,0 +1,87 @@
+# Local Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Training runs, temporary files, and local logs
+runs/
+*.log
+*.tmp
+*.swp
+
+# Ignore generated/research artifacts by default. Allow only the V75
+# inference reports and fold checkpoints required by the production pipeline.
+artifacts/*
+!artifacts/dense_dino_crossval/
+artifacts/dense_dino_crossval/*
+!artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/
+artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/*
+!artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/report.json
+!artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_0/
+!artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_1/
+!artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_2/
+!artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_3/
+artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_*/*
+!artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_*/best.pt
+
+!artifacts/multiview_crossval_v64/
+artifacts/multiview_crossval_v64/*
+!artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/
+artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/*
+!artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/report.json
+!artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/fold_0/
+!artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/fold_1/
+!artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/fold_2/
+!artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/fold_3/
+artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/fold_*/*
+!artifacts/multiview_crossval_v64/0c0a22076854d1a1e22681e59016421ad50c438a40856c3c1278b6165646888e/fold_*/last.pt
+
+!artifacts/style_multiview_v67/
+artifacts/style_multiview_v67/*
+!artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/
+artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/*
+!artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/report.json
+!artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/fold_0/
+!artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/fold_1/
+!artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/fold_2/
+!artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/fold_3/
+artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/fold_*/*
+!artifacts/style_multiview_v67/da5a35cc0cfe70d93de21b421bb1906d4e92be8a87d20b8a433f2701f76c5053/fold_*/last.pt
+
+!artifacts/binary_crossval/
+artifacts/binary_crossval/*
+!artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/
+artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/*
+!artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/report.json
+!artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_0/
+!artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_1/
+!artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_2/
+!artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_3/
+artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_*/*
+!artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_*/best.pt
+
+# Keep the reviewed V75 regression/validation report; ignore prediction caches.
+!artifacts/production_v75/
+artifacts/production_v75/*
+!artifacts/production_v75/6c301d3800e343bfe905e40c9867459f8bc52402434183edfe7512c9a2d5e81a/
+artifacts/production_v75/6c301d3800e343bfe905e40c9867459f8bc52402434183edfe7512c9a2d5e81a/*
+!artifacts/production_v75/6c301d3800e343bfe905e40c9867459f8bc52402434183edfe7512c9a2d5e81a/validation_report.json
+
+# Runtime-generated prediction/model caches are reproducible and machine-local.
+artifacts/web_v75_cache/
+artifacts/model_cache/
+
+# Ignore nested repository metadata in vendored source; keep its source files.
+vendor/**/.git/

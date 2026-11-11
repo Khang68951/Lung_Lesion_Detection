@@ -1,0 +1,303 @@
+{
+  "status": "done",
+  "created_at": "2026-11-05T18:57:42.284393+07:00",
+  "version": "v74_binary_segformer_b2_native512_unmarked_lab_style_reference_v2",
+  "protocol": {
+    "version": "v74_binary_segformer_b2_native512_unmarked_lab_style_reference_v2",
+    "seed": 2704,
+    "epochs_per_fold": 40,
+    "pretrained": "nvidia/segformer-b2-finetuned-ade-512-512",
+    "batch_size": 1,
+    "fold_groups": [
+      [
+        "250318_p01_pair01",
+        "250319_p01_pair01",
+        "250319_p03_pair01",
+        "250319_p12_pair01"
+      ],
+      [
+        "250318_p02_pair01",
+        "250318_p04_pair01",
+        "250319_p02_pair01",
+        "250319_p06_pair02"
+      ],
+      [
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p08_pair01",
+        "250319_p11_pair01"
+      ],
+      [
+        "250318_p03_pair01",
+        "250318_p07_pair01",
+        "250318_p09_pair01",
+        "250319_p06_pair01"
+      ]
+    ],
+    "development_images": 31,
+    "development_groups": 16,
+    "loss_domain": "valid_reference_lung_only",
+    "sealed_test_images_opened": 0,
+    "epoch_lesion_thresholds": [
+      0.25,
+      0.4,
+      0.55,
+      0.7
+    ],
+    "oof_lung_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "oof_lesion_thresholds": [
+      0.1,
+      0.125,
+      0.15,
+      0.175,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.3,
+      0.325,
+      0.35,
+      0.375,
+      0.4,
+      0.425,
+      0.45,
+      0.475,
+      0.5,
+      0.525,
+      0.55,
+      0.575,
+      0.6,
+      0.625,
+      0.65,
+      0.675,
+      0.7,
+      0.725,
+      0.75,
+      0.775,
+      0.8,
+      0.825,
+      0.85,
+      0.875,
+      0.9
+    ],
+    "reference_version": "development_reference_v2_additive_topology",
+    "reference_fingerprint": "226545302e799cf7cb93109c12b937c4647aad3d15a196b37956de1544c50bad",
+    "image_size": 512,
+    "style_bank": {
+      "version": "v45_unmarked_robust_lab_style_bank",
+      "artifact_fingerprint": "9894752020ff45796e853a80b8adb1d292ddf68f3dbe182c81556a0011319ade",
+      "images": 1764,
+      "transfer_probability": 0.5,
+      "policy": "robust_lab_median_p10_p90_span_nonblack_pixels_training_only"
+    }
+  },
+  "fold_artifacts": [
+    {
+      "fold": 0,
+      "training_groups": [
+        "250318_p02_pair01",
+        "250318_p03_pair01",
+        "250318_p04_pair01",
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p07_pair01",
+        "250318_p08_pair01",
+        "250318_p09_pair01",
+        "250319_p02_pair01",
+        "250319_p06_pair01",
+        "250319_p06_pair02",
+        "250319_p11_pair01"
+      ],
+      "validation_groups": [
+        "250318_p01_pair01",
+        "250319_p01_pair01",
+        "250319_p03_pair01",
+        "250319_p12_pair01"
+      ],
+      "best_epoch": 23,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_0/best.pt",
+      "checkpoint_sha256": "ea72053037a044e135be53ca52f18f7a8a89d60c06d70d3427715362ccaddb43"
+    },
+    {
+      "fold": 1,
+      "training_groups": [
+        "250318_p01_pair01",
+        "250318_p03_pair01",
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p07_pair01",
+        "250318_p08_pair01",
+        "250318_p09_pair01",
+        "250319_p01_pair01",
+        "250319_p03_pair01",
+        "250319_p06_pair01",
+        "250319_p11_pair01",
+        "250319_p12_pair01"
+      ],
+      "validation_groups": [
+        "250318_p02_pair01",
+        "250318_p04_pair01",
+        "250319_p02_pair01",
+        "250319_p06_pair02"
+      ],
+      "best_epoch": 18,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_1/best.pt",
+      "checkpoint_sha256": "c344e58407c2bd3fe57ae99261355ce005c87c322a54595a9cd5e6bfe1dd4adf"
+    },
+    {
+      "fold": 2,
+      "training_groups": [
+        "250318_p01_pair01",
+        "250318_p02_pair01",
+        "250318_p03_pair01",
+        "250318_p04_pair01",
+        "250318_p07_pair01",
+        "250318_p09_pair01",
+        "250319_p01_pair01",
+        "250319_p02_pair01",
+        "250319_p03_pair01",
+        "250319_p06_pair01",
+        "250319_p06_pair02",
+        "250319_p12_pair01"
+      ],
+      "validation_groups": [
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p08_pair01",
+        "250319_p11_pair01"
+      ],
+      "best_epoch": 34,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_2/best.pt",
+      "checkpoint_sha256": "e14f8750f48abbda993269eb43bac84f787a9427a4bb44109f357c7269f0f328"
+    },
+    {
+      "fold": 3,
+      "training_groups": [
+        "250318_p01_pair01",
+        "250318_p02_pair01",
+        "250318_p04_pair01",
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p08_pair01",
+        "250319_p01_pair01",
+        "250319_p02_pair01",
+        "250319_p03_pair01",
+        "250319_p06_pair02",
+        "250319_p11_pair01",
+        "250319_p12_pair01"
+      ],
+      "validation_groups": [
+        "250318_p03_pair01",
+        "250318_p07_pair01",
+        "250318_p09_pair01",
+        "250319_p06_pair01"
+      ],
+      "best_epoch": 18,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/binary_crossval/7e679ef4d4025ee14f7b5e5dec733a302b70c25893eb909c8f55083a9ed63ba7/fold_3/best.pt",
+      "checkpoint_sha256": "981d9fbea984728b6478ac0a65867242375e84597a0de4f639c2efc49434745f"
+    }
+  ],
+  "oof_winner": {
+    "lung_threshold": 0.5,
+    "lesion_threshold": 0.475,
+    "summary": {
+      "images": 31,
+      "groups": 16,
+      "pooled_lung": {
+        "tp": 2502834,
+        "fp": 370587,
+        "tn": 2542200,
+        "fn": 15431,
+        "dice": 0.9284049553330813,
+        "f1": 0.9284049553330813,
+        "iou": 0.8663766783483543,
+        "precision": 0.871029340984144,
+        "recall": 0.993872368475915,
+        "sensitivity": 0.993872368475915,
+        "specificity": 0.8727723654355777,
+        "accuracy": 0.9289238990899,
+        "balanced_accuracy": 0.9333223669557463
+      },
+      "pooled_lesion": {
+        "tp": 656433,
+        "fp": 219036,
+        "tn": 1241026,
+        "fn": 221478,
+        "dice": 0.7487629606816548,
+        "f1": 0.7487629606816548,
+        "iou": 0.5984181551159719,
+        "precision": 0.749807246173194,
+        "recall": 0.7477215799779249,
+        "sensitivity": 0.7477215799779249,
+        "specificity": 0.8499817131053339,
+        "accuracy": 0.8115829395805683,
+        "balanced_accuracy": 0.7988516465416293
+      },
+      "pooled_strict_canvas": {
+        "tp": 656433,
+        "fp": 219036,
+        "tn": 1241026,
+        "fn": 221478,
+        "dice": 0.7487629606816548,
+        "f1": 0.7487629606816548,
+        "iou": 0.5984181551159719,
+        "precision": 0.749807246173194,
+        "recall": 0.7477215799779249,
+        "sensitivity": 0.7477215799779249,
+        "specificity": 0.8499817131053339,
+        "accuracy": 0.8115829395805683,
+        "balanced_accuracy": 0.7988516465416293
+      },
+      "macro_image": {
+        "lung": {
+          "dice": 0.9205309803886017,
+          "iou": 0.8616160304896964,
+          "precision": 0.8661090475936365,
+          "recall": 0.9929963634623815,
+          "specificity": 0.8729934891071134,
+          "balanced_accuracy": 0.9329949262847476
+        },
+        "lesion": {
+          "dice": 0.7106426432065552,
+          "iou": 0.5750087052609324,
+          "precision": 0.754614028663236,
+          "recall": 0.7639350159401033,
+          "specificity": 0.8185442154950531,
+          "balanced_accuracy": 0.7912396157175782
+        },
+        "strict": {
+          "dice": 0.7106426432065552,
+          "iou": 0.5750087052609324,
+          "precision": 0.754614028663236,
+          "recall": 0.7639350159401033,
+          "specificity": 0.8185442154950531,
+          "balanced_accuracy": 0.7912396157175782
+        }
+      },
+      "ratio_mae_percentage_points": 15.449366640882683
+    }
+  },
+  "oof_gate": {
+    "passed": false,
+    "checks": {
+      "lesion_dice_at_least_0_80": false,
+      "precision_at_least_0_80": false,
+      "recall_at_least_0_80": false,
+      "specificity_at_least_0_80": true,
+      "lung_dice_at_least_0_90": true
+    }
+  },
+  "candidate_count": 330,
+  "test_payload_opened": false
+}

@@ -1,0 +1,14 @@
+{
+  "repository": "facebook/dinov2-with-registers-small",
+  "revision": "0d9846e56b43a21fa46d7f3f5070f0506a5795a9",
+  "local_directory": "/home/nkhang/project/Lung Detection/outputs/vit_weights_20261020/cache/models--facebook--dinov2-with-registers-small/snapshots/0d9846e56b43a21fa46d7f3f5070f0506a5795a9",
+  "files_sha256": {
+    "model.safetensors": "78e7f952c5af83cf6da38f08ff52b062bbe00c1adf39c4c7e0361969f27abae7",
+    "README.md": "54d1ae6496b3c5627996a935ca6edd763910e59988892d894973e9da9c2d5199",
+    "preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "config.json": "ae98d74b7fc56b1138ce06940184aa886370b9b1686f9239d30eeb6ef1a2cb37"
+  },
+  "license": "apache-2.0",
+  "downloaded_at": "2026-10-20T06:51:01.002490+00:00",
+  "source": "Official facebook organization on Hugging Face; safetensors only."
+}

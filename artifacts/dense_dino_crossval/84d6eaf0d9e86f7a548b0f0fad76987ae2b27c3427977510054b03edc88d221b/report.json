@@ -1,0 +1,469 @@
+{
+  "status": "done",
+  "created_at": "2026-11-04T16:02:28.317526+07:00",
+  "version": "v40_frozen_dense_dinov2_colour_decoder_reference_v2",
+  "protocol": {
+    "version": "v40_frozen_dense_dinov2_colour_decoder_reference_v2",
+    "seed": 4004,
+    "epochs_per_fold": 60,
+    "batch_size": 2,
+    "feature_fingerprint": "f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f",
+    "reference_fingerprint": "226545302e799cf7cb93109c12b937c4647aad3d15a196b37956de1544c50bad",
+    "fold_groups": [
+      [
+        "250318_p01_pair01",
+        "250319_p01_pair01",
+        "250319_p03_pair01",
+        "250319_p12_pair01"
+      ],
+      [
+        "250318_p02_pair01",
+        "250318_p04_pair01",
+        "250319_p02_pair01",
+        "250319_p06_pair02"
+      ],
+      [
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p08_pair01",
+        "250319_p11_pair01"
+      ],
+      [
+        "250318_p03_pair01",
+        "250318_p07_pair01",
+        "250318_p09_pair01",
+        "250319_p06_pair01"
+      ]
+    ],
+    "decoder": "dino384_to64_plus_rgb_lab6_to64_to32_to1_at96",
+    "optimizer": {
+      "name": "AdamW",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.001
+    },
+    "scheduler": "cosine_to_1e-6",
+    "augmentation": "paired_hv_flip_rot90",
+    "loss_domain": "valid_reference_lung_only",
+    "encoder_trainable": false,
+    "development_images": 31,
+    "development_groups": 16,
+    "epoch_lesion_thresholds": [
+      0.25,
+      0.4,
+      0.55,
+      0.7
+    ],
+    "oof_lung_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "oof_lesion_thresholds": [
+      0.1,
+      0.125,
+      0.15,
+      0.175,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.3,
+      0.325,
+      0.35,
+      0.375,
+      0.4,
+      0.425,
+      0.45,
+      0.475,
+      0.5,
+      0.525,
+      0.55,
+      0.575,
+      0.6,
+      0.625,
+      0.65,
+      0.675,
+      0.7,
+      0.725,
+      0.75,
+      0.775,
+      0.8,
+      0.825,
+      0.85,
+      0.875,
+      0.9
+    ],
+    "sealed_test_images_opened": 0
+  },
+  "feature_artifact": {
+    "status": "done",
+    "created_at": "2026-11-04T16:00:29.921714+07:00",
+    "version": "v40_frozen_dense_dinov2_colour_decoder_reference_v2",
+    "feature_fingerprint": "f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f",
+    "images": 31,
+    "labels_used_during_encoding": 0,
+    "test_payload_opened": false,
+    "files": [
+      {
+        "id": "250318_p01_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p01_pair01.npz",
+        "sha256": "fa49bce5be82f59c446875cb84e9dadc26c6ba8b121213e1c8d99081e92a98cb"
+      },
+      {
+        "id": "250318_p01_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p01_pair02.npz",
+        "sha256": "d79012705a42a298bcbf5235a586eb44fa7e2415bd949f4ad41846ccc28a919e"
+      },
+      {
+        "id": "250318_p02_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p02_pair01.npz",
+        "sha256": "aa547ad4a1652129bcaee7f8b7572fd8e7c218207903a10bc1306b148d80873c"
+      },
+      {
+        "id": "250318_p02_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p02_pair02.npz",
+        "sha256": "c1b0dda847988d06b814afb3bc5dd72e3f3d407e2d9a2573b480b19ba4799a68"
+      },
+      {
+        "id": "250318_p03_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p03_pair01.npz",
+        "sha256": "e300284ae3c9a3456f0a6a885a08318820ce60180d4429177788c57ea4122d74"
+      },
+      {
+        "id": "250318_p03_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p03_pair02.npz",
+        "sha256": "8bc1de869156343d01199f9094b6cb56752e0b294c677293a4e315b695baa5cd"
+      },
+      {
+        "id": "250318_p04_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p04_pair01.npz",
+        "sha256": "dd8576110e829ea035724df43154ca7bfbeb9a47c95374929c01ee6b63c77f5b"
+      },
+      {
+        "id": "250318_p04_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p04_pair02.npz",
+        "sha256": "75eb519e3722b9c34259801a284ce321914bc05c970b9e45ba966a8fe693c8d8"
+      },
+      {
+        "id": "250318_p05_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p05_pair01.npz",
+        "sha256": "e52238f1f9e6342b99e5df57c8f52501af1ba0b96fb804094f37a91fb63d21b0"
+      },
+      {
+        "id": "250318_p05_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p05_pair02.npz",
+        "sha256": "8c43ba58e9dabbc7b3cd29369c36fcbcfdca7ed6a85cc05a8e0ca5e5591a9fae"
+      },
+      {
+        "id": "250318_p06_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p06_pair01.npz",
+        "sha256": "c4ca8b30f52c5ad137d9b28c68836fb50ce30f423cc86a665b40037aae88a22b"
+      },
+      {
+        "id": "250318_p06_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p06_pair02.npz",
+        "sha256": "21a3aa1a7e3062a270abb14ce29286265c55892c5166ac58cfb5dcdb105e18e5"
+      },
+      {
+        "id": "250318_p07_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p07_pair01.npz",
+        "sha256": "622b82307d28754e04d7f068b6a3280fd66c34f1435114077b2a940f069a6686"
+      },
+      {
+        "id": "250318_p07_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p07_pair02.npz",
+        "sha256": "32610f517f97371dd49a475bcd5b1cea13fde45d2bdf0717e2e4ad63f0b9d64f"
+      },
+      {
+        "id": "250318_p08_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p08_pair01.npz",
+        "sha256": "1b75b1344057882f0e282cd52cf47ea8c47b2ad3e152323b83f643dfe8942347"
+      },
+      {
+        "id": "250318_p08_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p08_pair02.npz",
+        "sha256": "ef9069a8ce63b586e1ed318235f8e9d2304d62347076e11b22417e996739c07d"
+      },
+      {
+        "id": "250318_p09_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p09_pair01.npz",
+        "sha256": "80f7fab7af70573e4814395b4f497d69b8c417ace5cabf64cc640aea7af4d6f7"
+      },
+      {
+        "id": "250318_p09_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p09_pair02.npz",
+        "sha256": "50b867a47bdad474d8fe2432d8b5fc78c2edb5e4edd276d705332bcb71f17dac"
+      },
+      {
+        "id": "250318_p10_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250318_p10_pair01.npz",
+        "sha256": "90724fe6aef832898975fe950a4e88ad928bd1a284c5a7d82b58842b1e489da5"
+      },
+      {
+        "id": "250319_p01_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p01_pair01.npz",
+        "sha256": "ccc899ec7fd68402f1bff7e3903810083b7646a17d893c57238ebd8c1f45575d"
+      },
+      {
+        "id": "250319_p01_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p01_pair02.npz",
+        "sha256": "0f5921c28cbec0b562b56bff42c7be2c81f09d7f3d9bfb2b564c5e778e999110"
+      },
+      {
+        "id": "250319_p03_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p03_pair01.npz",
+        "sha256": "4a2e8c43179c247e09a4bfc028e7aacf20bc16827615ac067e8258ec78118e0a"
+      },
+      {
+        "id": "250319_p03_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p03_pair02.npz",
+        "sha256": "3de12818c369488c7c4498927b10b2a37ec180cbfc7a322fb4d8519854d2fb00"
+      },
+      {
+        "id": "250319_p06_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p06_pair01.npz",
+        "sha256": "c59e7c5a5dffd525fb01cf8bf218f8f470e86f9638b428c5ea698ec94f349448"
+      },
+      {
+        "id": "250319_p06_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p06_pair02.npz",
+        "sha256": "20c7025f82e748a7a7d01a5a5b938e3dc20c1a8abe3cd42014fbef7b3e751779"
+      },
+      {
+        "id": "250319_p07_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p07_pair02.npz",
+        "sha256": "1ee100162f9c5d2e2f12545d367b470783fe5a013f2cb3ab575a9893d28e4955"
+      },
+      {
+        "id": "250319_p02_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p02_pair01.npz",
+        "sha256": "6a7f8b8c7c86a8132476fc3cd63340c4cd751994d82d6fa43e86518874e0a992"
+      },
+      {
+        "id": "250319_p02_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p02_pair02.npz",
+        "sha256": "2a796138ed4382b4aa14428f2308f01f28caef55513f3f2f1ae2dc38ecee492e"
+      },
+      {
+        "id": "250319_p11_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p11_pair01.npz",
+        "sha256": "dbfc65402cfbbba5ad9a85410489a0e16e765c5d4ddb07313e0ccd576b64a91d"
+      },
+      {
+        "id": "250319_p11_pair02",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p11_pair02.npz",
+        "sha256": "35656ddac5845b39e430f1f9fb4ccb34d3e456c3c7817e1ad808f91543f523c1"
+      },
+      {
+        "id": "250319_p12_pair01",
+        "path": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_features/f4075e586df9d7f473337fb554df177a56366f8c13e7fb0ba1ba59237bf1141f/250319_p12_pair01.npz",
+        "sha256": "163ca338f85af2655cc9eb3be5a37bcc845bf572a1f5de641ab16c6eea11dd0c"
+      }
+    ]
+  },
+  "fold_artifacts": [
+    {
+      "fold": 0,
+      "training_groups": [
+        "250318_p02_pair01",
+        "250318_p03_pair01",
+        "250318_p04_pair01",
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p07_pair01",
+        "250318_p08_pair01",
+        "250318_p09_pair01",
+        "250319_p02_pair01",
+        "250319_p06_pair01",
+        "250319_p06_pair02",
+        "250319_p11_pair01"
+      ],
+      "validation_groups": [
+        "250318_p01_pair01",
+        "250319_p01_pair01",
+        "250319_p03_pair01",
+        "250319_p12_pair01"
+      ],
+      "best_epoch": 20,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_0/best.pt",
+      "checkpoint_sha256": "0ff6a922fce642d86741709052408c01bb782d7c65d91f4318c68d7bf922ce86"
+    },
+    {
+      "fold": 1,
+      "training_groups": [
+        "250318_p01_pair01",
+        "250318_p03_pair01",
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p07_pair01",
+        "250318_p08_pair01",
+        "250318_p09_pair01",
+        "250319_p01_pair01",
+        "250319_p03_pair01",
+        "250319_p06_pair01",
+        "250319_p11_pair01",
+        "250319_p12_pair01"
+      ],
+      "validation_groups": [
+        "250318_p02_pair01",
+        "250318_p04_pair01",
+        "250319_p02_pair01",
+        "250319_p06_pair02"
+      ],
+      "best_epoch": 16,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_1/best.pt",
+      "checkpoint_sha256": "febaea6e164e13f8739baeb20d07746bf5eb6c34d82955f9cf919bf97fe0d4c1"
+    },
+    {
+      "fold": 2,
+      "training_groups": [
+        "250318_p01_pair01",
+        "250318_p02_pair01",
+        "250318_p03_pair01",
+        "250318_p04_pair01",
+        "250318_p07_pair01",
+        "250318_p09_pair01",
+        "250319_p01_pair01",
+        "250319_p02_pair01",
+        "250319_p03_pair01",
+        "250319_p06_pair01",
+        "250319_p06_pair02",
+        "250319_p12_pair01"
+      ],
+      "validation_groups": [
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p08_pair01",
+        "250319_p11_pair01"
+      ],
+      "best_epoch": 15,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_2/best.pt",
+      "checkpoint_sha256": "0c21488f50bcf557b40495c863769204962c4cf378fc0621fedeb83dd634fcfb"
+    },
+    {
+      "fold": 3,
+      "training_groups": [
+        "250318_p01_pair01",
+        "250318_p02_pair01",
+        "250318_p04_pair01",
+        "250318_p05_pair01",
+        "250318_p06_pair01",
+        "250318_p08_pair01",
+        "250319_p01_pair01",
+        "250319_p02_pair01",
+        "250319_p03_pair01",
+        "250319_p06_pair02",
+        "250319_p11_pair01",
+        "250319_p12_pair01"
+      ],
+      "validation_groups": [
+        "250318_p03_pair01",
+        "250318_p07_pair01",
+        "250318_p09_pair01",
+        "250319_p06_pair01"
+      ],
+      "best_epoch": 13,
+      "checkpoint": "Unsupervised_Lesion_Workflow/artifacts/dense_dino_crossval/84d6eaf0d9e86f7a548b0f0fad76987ae2b27c3427977510054b03edc88d221b/fold_3/best.pt",
+      "checkpoint_sha256": "fce79f22751afe9d09223a13fc65c00ee451d4aba19b42eca50b5aa657c6e3f7"
+    }
+  ],
+  "oof_winner": {
+    "lung_threshold": 0.75,
+    "lesion_threshold": 0.45,
+    "summary": {
+      "images": 31,
+      "groups": 16,
+      "pooled_lung": {
+        "tp": 2489949,
+        "fp": 345025,
+        "tn": 2567762,
+        "fn": 28316,
+        "dice": 0.9302588582351732,
+        "f1": 0.9302588582351732,
+        "iou": 0.8696111815429104,
+        "precision": 0.8782969438167687,
+        "recall": 0.9887557504869424,
+        "sensitivity": 0.9887557504869424,
+        "specificity": 0.8815481530232042,
+        "accuracy": 0.9312580693390525,
+        "balanced_accuracy": 0.9351519517550733
+      },
+      "pooled_lesion": {
+        "tp": 623731,
+        "fp": 254478,
+        "tn": 1205584,
+        "fn": 254180,
+        "dice": 0.7103512288454092,
+        "f1": 0.7103512288454092,
+        "iou": 0.5508098365491011,
+        "precision": 0.7102307081799435,
+        "recall": 0.7104717904206691,
+        "sensitivity": 0.7104717904206691,
+        "specificity": 0.8257074014665131,
+        "accuracy": 0.7824363241149491,
+        "balanced_accuracy": 0.7680895959435912
+      },
+      "pooled_strict_canvas": {
+        "tp": 623731,
+        "fp": 254478,
+        "tn": 1205584,
+        "fn": 254180,
+        "dice": 0.7103512288454092,
+        "f1": 0.7103512288454092,
+        "iou": 0.5508098365491011,
+        "precision": 0.7102307081799435,
+        "recall": 0.7104717904206691,
+        "sensitivity": 0.7104717904206691,
+        "specificity": 0.8257074014665131,
+        "accuracy": 0.7824363241149491,
+        "balanced_accuracy": 0.7680895959435912
+      },
+      "macro_image": {
+        "lung": {
+          "dice": 0.9220377402298015,
+          "iou": 0.8639177886553217,
+          "precision": 0.8723185260043306,
+          "recall": 0.9872953287006363,
+          "specificity": 0.881697399803478,
+          "balanced_accuracy": 0.934496364252057
+        },
+        "lesion": {
+          "dice": 0.6814819341989004,
+          "iou": 0.5366163725095212,
+          "precision": 0.7002673077638152,
+          "recall": 0.730183523213409,
+          "specificity": 0.7867389951335295,
+          "balanced_accuracy": 0.7584612591734693
+        },
+        "strict": {
+          "dice": 0.6814819341989004,
+          "iou": 0.5366163725095212,
+          "precision": 0.7002673077638152,
+          "recall": 0.730183523213409,
+          "specificity": 0.7867389951335295,
+          "balanced_accuracy": 0.7584612591734693
+        }
+      },
+      "ratio_mae_percentage_points": 12.643479845194847
+    }
+  },
+  "oof_gate": {
+    "passed": false,
+    "checks": {
+      "lesion_dice_at_least_0_80": false,
+      "precision_at_least_0_80": false,
+      "recall_at_least_0_80": false,
+      "specificity_at_least_0_80": true,
+      "lung_dice_at_least_0_90": true
+    }
+  },
+  "candidate_count": 330,
+  "test_payload_opened": false
+}
